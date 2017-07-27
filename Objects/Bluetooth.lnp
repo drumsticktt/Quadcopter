@@ -1,0 +1,10 @@
+--cpu=Cortex-M4.fp
+".\objects\bluetooth.o"
+"..\..\..\..\driverlib\rvmdk\driverlib.lib"
+".\objects\startup_rvmdk.o"
+".\objects\uartstdio.o"
+"..\..\..\..\sensorlib\rvmdk\sensorlib.lib"
+--strict --scatter "..\..\ek-tm4c123gxl-boostxl-senshub\pressure_bmp180\pressure_bmp180.sct"
+--entry Reset_Handler --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Bluetooth.map" -o .\Objects\Bluetooth.axf
